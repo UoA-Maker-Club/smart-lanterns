@@ -4,10 +4,21 @@
 *
 */
 
-#include "config wifi.h"
-#include "config led.h"
 
- 
+#ifdef ENABLE_DEBUG
+       #define DEBUG_ESP_PORT Serial
+       #define NODEBUG_WEBSOCKETS
+       #define NDEBUG
+#endif 
+
+#include <ESP8266WiFi.h>
+#include <FastLED.h>
+#include "SinricPro.h"
+#include "SinricProLight.h"
+#include "conf.h"
+
+SinricProLight& Light = SinricPro[LIGHT_ID]; 
+
 CRGB insideLeds[INNER_COUNT];                 
 CRGB outerLeds[OUTER_NUM];              
 int innerIndex = 0;             
