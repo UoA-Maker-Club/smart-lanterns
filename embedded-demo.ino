@@ -12,52 +12,29 @@
 #endif 
 
 #include <ESP8266WiFi.h>
-#include <FastLED.h>
 #include "SinricPro.h"
 #include "SinricProLight.h"
 #include "conf.h"
+#include "patterns.h"
+
 
 SinricProLight& Light = SinricPro[LIGHT_ID]; 
-
-CRGB insideLeds[INNER_COUNT];                 
-CRGB outerLeds[OUTER_NUM];              
-int innerIndex = 0;             
-int outerIndex = 0;             
 bool powerState = true;         
 
 void setup() {
-  FastLED.addLeds<WS2812, INNER_PIN, GRB>(insideLeds, INNER_COUNT);
-  FastLED.addLeds<WS2812, OUTER_PIN, GRB>(outerLeds, OUTER_NUM);
+  setupLeds();
 
   setupWiFi();
   setupSinricPro(); 
 }
 
-
 void loop()
 {
 
   if(powerState){
-    // DRAW OUTSIDE TAIL
-    for(int i = 0; i < OUTER_NUM; i++){
-      outerLeds[(OUTER_NUM+i-outerIndex)%OUTER_NUM] = CHSV(200,255,255-(i*12));
-    }
-    outerIndex++;
-    if(outerIndex > OUTER_NUM){outerIndex = 0;}
-
-    // DRAW INSIDE TAIL
-    for(int i = 0; i < INNER_COUNT; i++){
-      insideLeds[(INNER_COUNT+i-innerIndex)%INNER_COUNT] = CHSV(170,255,255-(i*15));
-    }
-    innerIndex++;
-    if(innerIndex > INNER_COUNT){innerIndex = 0;}
-
-
-    FastLED.show();
-    delay(50);
+    drawPattern();
   } else {
-    FastLED.clear();
-    FastLED.show();
+    clearLeds();
   }
   SinricPro.handle(); 
 }
