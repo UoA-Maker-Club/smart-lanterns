@@ -2,7 +2,7 @@
 
 ## Introduction
 
-TIME: ~ 2hr
+TIME: ~ 2.5hr
 
 WRITTEN BY: [ETIENNE NAUDE](https://etinaude.dev)
 
@@ -113,12 +113,23 @@ I have not used all of these APIs so I am not sure the exact access you have or 
 
 ## Other things you can make with this
 
-Automated front door lock
-Automated garage door lock
-Automated switch (eg put in on a fan)
-Automating Air con
-Automating 3D printers
+Automated front door lock\
+Automated garage door lock\
+Automated switch (eg put in on a fan)\
+Automating Air con\
+Collect data from sensors\
+Security System\
+Mini webserver\
+Automating 3D printers\
 Decor of various sorts
+
+## Simulator
+
+![lights!](/images/sim.png)
+
+Here is a link to a simplified demonstration of the lights working.
+
+[https://wokwi.com/projects/328281603421766226](https://wokwi.com/projects/328281603421766226)
 
 ## Pattern Options
 
