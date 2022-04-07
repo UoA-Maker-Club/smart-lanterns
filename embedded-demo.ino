@@ -2,6 +2,8 @@
 * CREATED BY: ETIENNE NAUDE - eti@naude.dev
 * LINK FILES AND RUN AS MAIN
 *
+*
+* the main file to edit is conf.h this is only for extra editing outside teh scope of the workshop
 */
 
 
@@ -9,7 +11,7 @@
        #define DEBUG_ESP_PORT Serial
        #define NODEBUG_WEBSOCKETS
        #define NDEBUG
-#endif 
+#endif
 
 #include <ESP8266WiFi.h>
 #include "SinricPro.h"
@@ -18,14 +20,14 @@
 #include "patterns.h"
 
 
-SinricProLight& Light = SinricPro[LIGHT_ID]; 
-bool powerState = true;         
+SinricProLight& Light = SinricPro[LIGHT_ID];
+bool powerState = true;
 
 void setup() {
   setupLeds();
 
   setupWiFi();
-  setupSinricPro(); 
+  setupSinricPro();
 }
 
 void loop()
@@ -36,7 +38,7 @@ void loop()
   } else {
     clearLeds();
   }
-  SinricPro.handle(); 
+  SinricPro.handle();
 }
 
 

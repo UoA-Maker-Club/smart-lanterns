@@ -1,8 +1,17 @@
+/*
+* CREATED BY: ETIENNE NAUDE - eti@naude.dev
+* Some Functions
+*
+* Each function shows a different pattern on the ring
+*
+*/
+
+
 #include "conf.h"
 #include <FastLED.h>
 
 int ledIndex = 0;
-CRGB insideLeds[LED_COUNT]; 
+CRGB insideLeds[LED_COUNT];
 
 void setupLeds(){
   FastLED.addLeds<WS2812, LED_PIN, GRB>(insideLeds, LED_COUNT);
@@ -55,4 +64,3 @@ void drawPattern(){
 
   FastLED.show();
 }
-

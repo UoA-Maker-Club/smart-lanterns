@@ -41,7 +41,7 @@ You will need to bring 2 things
 
 Glue the paper using some super glue to the top of the 3d printed ring as shown below, try center it as much as possible.
 
-<!-- TODO ADD IMAGE -->
+![construction!](/images/construct.jpg)
 
 ### Step 3.2: Wiring
 
@@ -59,7 +59,7 @@ Outside ring (Long LEDs):
 - GND -> GND
 - DIN -> D1
 
-<!-- TODO ADD CIRCUIT DIAGRAM -->
+![diagram!](/images/digram.png)
 
 ## Step 4: Configuration
 
@@ -69,25 +69,19 @@ We will use [Sinric Pro](https://sinric.pro/index.html) to connect this to the i
 
 Start by creating a [free Sinric Pro account](https://portal.sinric.pro/register).
 
-<!-- TODO IMAGE -->
-
 then create a new light by clicking on devices and **+ Add Device**.
 
 then fill in a name for your circle and select **Smart Light Bulb** for the Device Type.
 
-<!-- TODO IMAGE -->
-
 Then click next until you are on the screen which shows the details of your device. It should look like this:
 
-<!-- TODO IMAGE -->
+![diagram!](/images/sinricDeviceSetp.png)
 
 ### Step 4.2: Configuration File
 
 Open the demo code in the Arduino IDE
 
 copy paste each field into the **config.h** and add your WIFI details (SSID and password)
-
-<!-- TODO IMAGE -->
 
 ### Step 4.3: Pattern
 
@@ -99,27 +93,23 @@ Plug the D1 into your laptop and
 
 Select the board from the drop down menu. then click the upload button (right pointing arrow).
 
-<!-- TODO IMAGE -->
-
 This should now show the pattern you selected
 
 ## Optional Steps
 
 ### Google Assistant
 
-<!-- TODO  -->
+You can add a connection to Google Assistant via the sinric pro app. Download the app from the [Google Play Store](https://play.google.com/store/apps/details?id=pro.sinric&hl=en_NZ&gl=US) or the [Apple App Store](https://apps.apple.com/us/app/sinric-pro/id1513086098). From the app you log in and all your devices should display in a list. Then you can open the [Google Home](https://play.google.com/store/apps/details?id=com.google.android.apps.chromecast.app&hl=en_NZ&gl=US) app
 
 ### Custom Patterns
 
-<!-- TODO  -->
+There are many other pattern options make with this, each LED can take a few different colours (about 16 million) but most would look too similar to each other to see, I would recommend using bright colours that are highly saturated.
 
 ### API Connections?
 
-<!-- TODO  -->
+Many companies such as Facebook, Google, Canvas, Discord etc. Have APIs which allow you to link into their services. This means you can potentially have your lights react to certain events. For Example your lights can show green if you received a good grade on canvas and red if you received a bad grade.
 
-many companies such as Facebook, Google, Canvas, Discord etc. Have APIs which allow you to link into their services. This means you can potentially have your lights react to certain events. For Example your lights can show green if you received a good grade on canvas and red if you received a bad grade.
-
-I have not used many of these APIs so I am not sure the exact access you have or how to set them up but this is an example of the kinds of things you can do.
+I have not used all of these APIs so I am not sure the exact access you have or how to set them up but this is an example of the kinds of things you can do. And this is outside the scope of this workshop
 
 ## Other things you can make with this
 
@@ -132,10 +122,4 @@ Decor of various sorts
 
 ## Pattern Options
 
-<!-- TODO IMAGE -->
-
-<!-- TODO IMAGE -->
-
-<!-- TODO IMAGE -->
-
-<!-- TODO IMAGE -->
+![lights!](/images/lights.jpg)
