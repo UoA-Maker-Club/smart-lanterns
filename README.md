@@ -1,4 +1,4 @@
-# Embedded Rings
+# Smart Lanterns
 
 ## Presented by GSDC and Maker Club UOA
 
