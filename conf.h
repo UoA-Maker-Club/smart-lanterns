@@ -2,7 +2,7 @@
 
 // LED SETTINGS
 #define LED_PIN   D4
-#define LED_COUNT 30
+#define LED_COUNT 18
 
 
 // WIFI SETTINGS
@@ -10,9 +10,9 @@
 #define WIFI_PASS         "UoA_Unl3ash"
 
 // Sinric Pro
-#define APP_KEY           ""
-#define APP_SECRET        ""
-#define LIGHT_ID          ""
+#define LIGHT_ID          "xxxxxxxxxxxxxxxxxxxxxxxx"
+#define APP_KEY           "d6d37047-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+#define APP_SECRET        "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx-xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 
 #define HUE 200
