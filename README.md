@@ -10,7 +10,7 @@ WRITTEN BY: [Etienne Naude](https://etinaude.dev)
 
 LINK: [https://github.com/etinaude/smart-lanterns](https://github.com/etinaude/smart-lanterns)
 
-<img width="500px" src="./images/primary.webp">
+<img width="500px" src="./images/promo/primary.webp">
 
 ## `Format of the event`
 
@@ -30,7 +30,7 @@ The first step is to download the code for this project which you can do from he
 
 click the green code button then select `Download ZIP`
 
-<img width="500px" src="./images/downlaod.png">
+<img width="500px" src="./images/download.webp">
 
 you should find these instructions in the README.md file.
 
@@ -45,18 +45,18 @@ click `file > preferences > Additional board manager URLs` and paste this link i
 
 then click `OK`.
 
-<img width="500px" src="./images/boardUrl.png">
+<img width="500px" src="./images/boardUrl.webp">
 
 Once this is done install the new board manager by clicking the board icon searching `esp8266` and clicking `Install`.
 
-<img width="500px" src="./images/board%20manager.png">
+<img width="500px" src="./images/board%20manager.webp">
 
 ## `Step 2.2: Libraries`
 
 Click on the library icon and search for `FastLED`, then click install. Do the same for `sinricPro`.
 
-<img width="250px" src="./images/fastLED.png">
-<img width="250px" src="./images/sinric.png">
+<img width="250px" src="./images/fastLED.webp">
+<img width="250px" src="./images/sinric-lib.webp">
 
 ## `Step 2.3: Open Code`
 
@@ -124,7 +124,7 @@ then fill in a name for your circle and select **Smart Light Bulb** for the Devi
 
 Then click next until you are on the screen which shows the details of your device. It should look like this:
 
-<img width="800px" src="./images/sinricDeviceSetp.webp">
+<img width="800px" src="./images/sinric.webp">
 
 ### `Step 4.2: Configuration File`
 
@@ -143,7 +143,7 @@ Select `LOLIN(WEMOS) D1 mini clone` from the drop down menu.\
 Then click the upload button (right pointing arrow).\
 And wait for your code to compile and upload. As seen in the image below:
 
-<img width="800px" src="./images/upload.gif">
+<img width="800px" src="./images/upload.webp">
 
 ## `Step 6: Voice Assistant`
 
@@ -186,9 +186,9 @@ There are many other pattern options make with this, each LED can take a few dif
 
 For more workshops like this please checkout either my github profile [etinaude](https://github.com/etinaude) or the following clubs which made this event possible:
 
-| Link      | <img width="100px" src="./images/gdsc%20square.webp">          | <img width="100px" src="./images/maker%20club%20square.webp"> |
-| --------- | -------------------------------------------------------------- | ------------------------------------------------------------- |
-| Discord   | [W6QtB3Sm2U](https://discord.gg/W6QtB3Sm2U)                    | [penxcqxhyh](https://discord.gg/penxcqxhyh)                   |
-| Instagram | [@gdsc.uoa](https://www.instagram.com/gdsc.uoa/)               | [@make.uoa](https://www.instagram.com/make.uoa/)              |
-| Website   | [GSDC](https://gdsc.community.dev/the-university-of-auckland/) | [makeuoa.nz](https://makeuoa.nz/)                             |
-| Website   | ![](./images/gdsc.png)                                         | ![](./images/makerclub.png)                                   |
+| Link      | <img width="100px" src="./images/promo/gdsc%20logo.webp">      | <img width="100px" src="./images/promo/maker%20club%20logo.webp"> |
+| --------- | -------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Discord   | [W6QtB3Sm2U](https://discord.gg/W6QtB3Sm2U)                    | [penxcqxhyh](https://discord.gg/penxcqxhyh)                       |
+| Instagram | [@gdsc.uoa](https://www.instagram.com/gdsc.uoa/)               | [@make.uoa](https://www.instagram.com/make.uoa/)                  |
+| Website   | [GSDC](https://gdsc.community.dev/the-university-of-auckland/) | [makeuoa.nz](https://makeuoa.nz/)                                 |
+| Website   | <img width="200px" src="./images/promo/gdsc.webp">             | <img width="200px" src="./images/promo/makerclub.webp">           |
