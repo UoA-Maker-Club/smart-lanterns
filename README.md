@@ -10,7 +10,7 @@ WRITTEN BY: [Etienne Naude](https://etinaude.dev)
 
 LINK: [https://github.com/etinaude/smart-lanterns](https://github.com/etinaude/smart-lanterns)
 
-<!-- <img width="500px" src="./images/primary.webp"> -->
+<img width="500px" src="./images/primary.webp">
 
 ## `Format of the event`
 
@@ -24,9 +24,13 @@ This is a free event with the goal of sending everyone home with a smart lantern
 
 ## `Step 1: Code`
 
-The first step is to download the code for this project which you can do from here
+The first step is to download the code for this project which you can do from here:
 
 [https://github.com/etinaude/smart-lanterns](https://github.com/etinaude/smart-lanterns)
+
+click the green code button then select `Download ZIP`
+
+<img width="500px" src="./images/downlaod.png">
 
 you should find these instructions in the README.md file.
 
@@ -47,12 +51,16 @@ Once this is done install the new board manager by clicking the board icon searc
 
 <img width="500px" src="./images/board%20manager.png">
 
-## `Step 2.1: Libraries`
+## `Step 2.2: Libraries`
 
 Click on the library icon and search for `FastLED`, then click install. Do the same for `sinricPro`.
 
 <img width="250px" src="./images/fastLED.png">
 <img width="250px" src="./images/sinric.png">
+
+## `Step 2.3: Open Code`
+
+Open the code in Arduino, all the files are located in the folder named `smart-lanterns`. You can open this by clicking `file > open` in the top left corner.
 
 ## `Step 3: Hardware`
 
@@ -120,9 +128,9 @@ Then click next until you are on the screen which shows the details of your devi
 
 ### `Step 4.2: Configuration File`
 
-Open the demo code in the Arduino IDE
+Open the demo code in the Arduino IDE (Step 2.3)
 
-copy paste each field into the **config.h** and add your WIFI details (SSID and password)
+copy paste each field into the **config.h** and add your WIFI details (name and password)
 
 ### `Step 4.3: Pattern`
 
@@ -139,7 +147,7 @@ And wait for your code to compile and upload. As seen in the image below:
 
 ## `Step 6: Voice Assistant`
 
-You can add a connection to Google Assistant via the sinric pro app. Download the app from the [Google Play Store](https://play.google.com/store/apps/details?id=pro.sinric&hl=en_NZ&gl=US) or the [Apple App Store](https://apps.apple.com/us/app/sinric-pro/id1513086098). From the app you log in and all your devices should display in a list. Then you can open the [Google Home](https://play.google.com/store/apps/details?id=com.google.android.apps.chromecast.app&hl=en_NZ&gl=US) app and click `+ > Set up device > Works with Google > Sinric Pro`. this allows you to link your Sinric Pro device to Google Home and control it with voice commands!
+You can add a connection to Google Assistant via the sinric pro app. Download the app from the [Google Play Store](https://play.google.com/store/apps/details?id=pro.sinric&hl=en_NZ&gl=US) or the [Apple App Store](https://apps.apple.com/us/app/sinric-pro/id1513086098). From the app you log in and all your devices should display in a list. Then you can open the [Google Home](https://play.google.com/store/apps/details?id=com.google.android.apps.chromecast.app&hl=en_NZ&gl=US) app and click `+ > Set up device > Works with Google > Sinric Pro` in the top left corner. this allows you to link your Sinric Pro device to Google Home and control it with voice commands!
 
 ## `Past the workshop:`
 
@@ -164,7 +172,9 @@ Automating 3D printers\
 Mini security cam (ESP-32 CAM)\
 Decor of various sorts\
 Automate 3d printing\
-smart speaker
+Smart Speaker
+
+What else????
 
 ### `Custom Patterns`
 
