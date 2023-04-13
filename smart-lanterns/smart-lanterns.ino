@@ -32,7 +32,6 @@ void setup() {
 
 void loop()
 {
-
   if(powerState){
     drawPattern();
   } else {
@@ -47,6 +46,16 @@ bool onPowerState(const String &deviceId, bool &state) {
   return true;
 }
 
+bool onBrightness(const String& deviceId, int& brightness) {
+    FastLED.setBrightness(brightness);
+    return true;
+}
+
+bool onAdjustBrightness(const String& deviceId, int& brightnessDelta) {
+    FastLED.setBrightness(FastLED.getBrightness() + brightnessDelta);
+    return true;
+}
+
 void setupWiFi() {
     WiFi.begin(WIFI_SSID, WIFI_PASS);
     while (WiFi.status() != WL_CONNECTED) {
@@ -56,5 +65,7 @@ void setupWiFi() {
 
 void setupSinricPro() {
     Light.onPowerState(onPowerState);
+    Light.onBrightness(onBrightness);
+    Light.onAdjustBrightness(onAdjustBrightness);
     SinricPro.begin(APP_KEY, APP_SECRET);
 }
